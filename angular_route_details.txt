@@ -1,0 +1,23 @@
+				Routes
+			   -------
+
+We use one of two methods to declare all application routes in AngularJS: 
+the when method and the otherwise method.
+
+angular.module('myApp', []).
+config(['$routeProvider', function($routeProvider) {
+}]);
+
+1. The first parameter is the route path, which is matched against the
+   $location.path, the path of the current URL
+
+2. The second parameter is the configuration object, which determines exactly
+   what to do if the route in the first parameter is matched.
+   
+Configuration object properties:
+	1. controller,
+	2. template, 
+	3. templateURL, 
+	4. resolve, 
+	5. redirectTo and 
+	6.reloadOnSearch
